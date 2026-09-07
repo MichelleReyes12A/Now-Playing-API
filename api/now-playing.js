@@ -1,14 +1,12 @@
-// api/now-playing.js
-//
 // Función serverless para Vercel. Guarda el refresh token y el client secret
 // de Spotify de forma segura (variables de entorno) y expone un endpoint
 // público y "limpio" que tu página estática puede consultar sin exponer nada.
 //
-// Variables de entorno que debes configurar en Vercel (Project Settings > Environment Variables):
+// Variables de entorno en Vercel:
 //   SPOTIFY_CLIENT_ID
 //   SPOTIFY_CLIENT_SECRET
 //   SPOTIFY_REFRESH_TOKEN
-//   ALLOWED_ORIGIN   (opcional, por defecto usa el de GitHub Pages de Michelle)
+//   ALLOWED_ORIGIN
 
 const DEFAULT_ORIGIN = "https://michellereyes12a.github.io";
 
